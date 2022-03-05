@@ -19,6 +19,7 @@ public class Main {
         dictionary.stream()
                 .forEach(System.out::println);
         }
+        //чистая функция: она детерминирована, не обладает побочными эффектами, наличие монады
 
     public static Function<String, List<String>> words = x -> Arrays.stream(x.split("\\b"))
             .map(String::toUpperCase)
